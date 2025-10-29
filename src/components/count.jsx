@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Count =()=>{
     const [count,setCount]=useState(0)
     const increment = ()=> setCount(count + 1)
     const dicrement =()=> count > 0 ? setCount(count -1 ) :0
+
+    useEffect(()=>{
+      console.log("this is working inside the useEffect");
+    },[])
     
     return(
         <div>
