@@ -6,6 +6,9 @@ import './App.css'
 import HooksCounter from "./components/hookCounter"
 import Timer from "./components/timer"
 import Counter from "./components/counter"
+import SwitchLight from "./components/switchLight"
+import Effect from "./components/effect"
+import MemoExample from "./components/memoExample"
 
 export const ThemeContext = createContext()
 
@@ -35,6 +38,13 @@ const ToggleTheme =()=>{
       <Timer/>
     </div>
     <Counter/>
+    <div>
+      <SwitchLight/>
+    </div>
+    <Effect/>
+    <div className="p-5 m-3 flex ">
+    <MemoExample/>
+    </div>
     </div>
     </ThemeContext.Provider>
     
